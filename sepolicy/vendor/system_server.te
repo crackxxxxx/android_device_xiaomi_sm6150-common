@@ -1,1 +1,5 @@
 allow system_server system_data_root_file:file read;
+allow system_server system_data_root_file:file getattr;
+
+dontaudit system_server system_data_root_file:file read;
+dontaudit system_server system_data_root_file:file getattr;
